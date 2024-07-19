@@ -1,9 +1,8 @@
-use bevy::prelude::*;
-
-fn main() -> AppExit {
-    App::new().add_plugins(DefaultPlugins)
-    .add_systems(Startup, spawn_camera)
-    .run()
+use bevy::prelude::Schedule;
+fn main() {
+    let mut schedule = Schedule::default();
+    schedule.add_systems(noop);
 }
 
-fn spawn_camera(_commands: Commands) {}
+fn noop() {}
+
