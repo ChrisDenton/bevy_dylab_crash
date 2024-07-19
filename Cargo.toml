@@ -5,7 +5,7 @@ edition = "2021"
 license = "MIT OR Apache-2.0 OR CC0-1.0"
 
 [dependencies.bevy]
-version = "0.13"
+version = "0.12"
 default-features = false
 features = ["dynamic_linking"]
 
