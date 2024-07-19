@@ -6,6 +6,4 @@ fn main() -> AppExit {
     .run()
 }
 
-fn spawn_camera(mut commands: Commands) {
-    commands.spawn(Camera2dBundle::default());
-}
+fn spawn_camera(_commands: Commands) {}
